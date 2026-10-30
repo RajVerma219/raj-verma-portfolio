@@ -3,19 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Raj Verma | Frontend & Backend Developer</title>
-    <meta name="description" content="Raj Verma - Frontend & Backend Developer. Building modern web solutions for startups and businesses.">
+    <title>Raj Verma - Frontend & Backend Developer</title>
+    <meta name="description" content="Raj Verma - Frontend & Backend Developer. Building clean, fast & mobile-friendly websites.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-    <!-- Header -->
     <header class="header">
         <nav class="nav container">
-            <a href="#home" class="logo">Raj Verma</a>
+            <a href="#home" class="logo">
+                <span class="logo-bracket">&lt;</span>Raj Verma<span class="logo-bracket">/&gt;</span>
+            </a>
             <button class="nav-toggle" aria-label="toggle menu">
                 <span></span>
                 <span></span>
@@ -26,213 +27,179 @@
                     <a href="#home" class="nav-link">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#features" class="nav-link">Services</a>
+                    <a href="#about" class="nav-link">About</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#projects" class="nav-link">Projects</a>
+                    <a href="#experience" class="nav-link">Experience</a>
                 </li>
                 <li class="nav-item">
                     <a href="#skills" class="nav-link">Skills</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#contact" class="nav-link nav-link-cta">Contact Me</a>
+                    <a href="#projects" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
                 </li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <!-- Hero Section -->
         <section id="home" class="hero">
-            <div class="container">
-                <div class="hero-content">
-                    <div class="hero-badge">
-                        <span>👋 Available for Freelance Work</span>
+            <div class="container hero-content">
+                <div class="hero-grid">
+                    <div class="hero-text">
+                        <p class="hero-greeting">Hi there, I'm</p>
+                        <h1 class="hero-name">Raj Verma</h1>
+                        <h2 class="hero-role">Frontend & Backend Developer</h2>
+                        <p class="hero-description">Building clean, fast, and mobile-friendly websites from scratch. I help small businesses establish a professional online presence.</p>
+                        <div class="hero-buttons">
+                            <a href="#projects" class="btn btn-primary">
+                                <span>View My Work</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                            <a href="#contact" class="btn btn-outline">Get In Touch</a>
+                        </div>
+                        <div class="hero-social">
+                            <a href="https://github.com/RajVerma219" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://wa.me/919871244749" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                            <a href="mailto:vraj01889@gmail.com" aria-label="Email">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                        </div>
                     </div>
-                    <h1 class="hero-title">
-                        I Build Modern Websites For
-                        <span class="hero-title-gradient">Startups & Businesses</span>
-                    </h1>
-                    <p class="hero-description">
-                        Frontend & Backend Developer crafting clean, fast, and conversion-focused websites. 
-                        Turn your ideas into powerful digital experiences that drive results.
+                    <div class="hero-visual">
+                        <div class="hero-card">
+                            <div class="hero-card-header">
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                            </div>
+                            <div class="hero-card-body">
+                                <div class="code-line"><span class="code-keyword">const</span> <span class="code-var">developer</span> = {</div>
+                                <div class="code-line indent">  <span class="code-property">name</span>: <span class="code-string">"Raj Verma"</span>,</div>
+                                <div class="code-line indent">  <span class="code-property">role</span>: <span class="code-string">"Full Stack Dev"</span>,</div>
+                                <div class="code-line indent">  <span class="code-property">skills</span>: [<span class="code-string">"HTML"</span>, <span class="code-string">"CSS"</span>, <span class="code-string">"JS"</span>],</div>
+                                <div class="code-line indent">  <span class="code-property">focus</span>: <span class="code-string">"Clean & Fast Websites"</span></div>
+                                <div class="code-line">};</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-label">About</span>
+                    <h2 class="section-title">Who I Am</h2>
+                </div>
+                <div class="about-content">
+                    <p class="about-text">
+                        I'm a passionate freelance web developer specializing in creating clean, modern, and responsive websites from scratch. 
+                        With expertise in both frontend and backend development, I transform ideas into functional digital solutions that help 
+                        small businesses stand out online.
                     </p>
-                    <div class="hero-buttons">
-                        <a href="#projects" class="btn btn-primary">
-                            <span>View Projects</span>
-                            <i class="fas fa-arrow-right"></i>
-                        </a>
-                        <a href="https://wa.me/919871244749" target="_blank" class="btn btn-ghost">
-                            <i class="fab fa-whatsapp"></i>
-                            <span>Let's Talk</span>
-                        </a>
-                    </div>
-                    <div class="hero-stats">
-                        <div class="stat-item">
-                            <div class="stat-number">2+</div>
-                            <div class="stat-label">Projects Delivered</div>
-                        </div>
-                        <div class="stat-divider"></div>
-                        <div class="stat-item">
-                            <div class="stat-number">100%</div>
-                            <div class="stat-label">Mobile Responsive</div>
-                        </div>
-                        <div class="stat-divider"></div>
-                        <div class="stat-item">
-                            <div class="stat-number">Fast</div>
-                            <div class="stat-label">Delivery</div>
-                        </div>
-                    </div>
+                    <p class="about-text">
+                        My goal is to deliver fast-loading, mobile-friendly websites that not only look professional but also drive results 
+                        for your business. Every project is built with attention to detail and a focus on user experience.
+                    </p>
                 </div>
             </div>
-            <div class="hero-bg-gradient"></div>
         </section>
 
-        <!-- Features/Services Section -->
-        <section id="features" class="section">
+        <section id="experience" class="section section-alt">
             <div class="container">
                 <div class="section-header">
-                    <span class="section-label">What I Do</span>
-                    <h2 class="section-title">Services I Offer</h2>
-                    <p class="section-subtitle">Solutions tailored to help your business grow online</p>
+                    <span class="section-label">Experience</span>
+                    <h2 class="section-title">My Journey</h2>
                 </div>
-                <div class="features-grid">
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <i class="fas fa-laptop-code"></i>
+                <div class="experience-card">
+                    <div class="experience-header">
+                        <div>
+                            <h3 class="experience-title">Freelance Web Developer</h3>
+                            <p class="experience-company">Self-Employed</p>
                         </div>
-                        <h3 class="feature-title">Landing Page Design</h3>
-                        <p class="feature-description">High-converting landing pages designed to capture leads and drive sales for your product or service.</p>
+                        <span class="experience-badge">Present</span>
                     </div>
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <i class="fas fa-store"></i>
-                        </div>
-                        <h3 class="feature-title">Business Websites</h3>
-                        <p class="feature-description">Professional websites for small businesses, stores, and startups to establish a strong online presence.</p>
-                    </div>
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <i class="fas fa-mobile-alt"></i>
-                        </div>
-                        <h3 class="feature-title">Responsive Design</h3>
-                        <p class="feature-description">Mobile-first approach ensuring your website looks perfect on all devices - desktop, tablet, and mobile.</p>
-                    </div>
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <i class="fas fa-rocket"></i>
-                        </div>
-                        <h3 class="feature-title">Fast & SEO Ready</h3>
-                        <p class="feature-description">Clean code, optimized performance, and SEO-friendly structure to help you rank better online.</p>
-                    </div>
+                    <p class="experience-description">
+                        Built and deployed responsive websites from scratch for various clients and personal projects. 
+                        Specializing in product showcases, landing pages, and business websites using modern web technologies.
+                    </p>
+                    <ul class="experience-list">
+                        <li>Developed responsive, mobile-first websites with HTML, CSS & JavaScript</li>
+                        <li>Created product showcase sites for retail and handmade businesses</li>
+                        <li>Deployed live websites on custom domains with optimized performance</li>
+                    </ul>
                 </div>
             </div>
         </section>
 
-        <!-- Projects Section -->
-        <section id="projects" class="section section-alt">
-            <div class="container">
-                <div class="section-header">
-                    <span class="section-label">Portfolio</span>
-                    <h2 class="section-title">Featured Projects</h2>
-                    <p class="section-subtitle">Some of my recent work</p>
-                </div>
-                <div class="projects-grid">
-                    <article class="project-card-modern">
-                        <div class="project-preview">
-                            <div class="project-preview-content">
-                                <i class="fas fa-gem"></i>
-                            </div>
-                        </div>
-                        <div class="project-content">
-                            <h3 class="project-title">Epoxy Inspiration</h3>
-                            <p class="project-description">Product showcase website for custom handmade resin art products. Clean design with focus on product display.</p>
-                            <div class="project-tech">
-                                <span class="tech-tag">HTML</span>
-                                <span class="tech-tag">CSS</span>
-                                <span class="tech-tag">JavaScript</span>
-                            </div>
-                            <a href="https://epoxyinspiration.ct.ws/" target="_blank" rel="noopener noreferrer" class="project-link">
-                                View Live Demo <i class="fas fa-external-link-alt"></i>
-                            </a>
-                        </div>
-                    </article>
-                    <article class="project-card-modern">
-                        <div class="project-preview project-preview-alt">
-                            <div class="project-preview-content">
-                                <i class="fas fa-clock"></i>
-                            </div>
-                        </div>
-                        <div class="project-content">
-                            <h3 class="project-title">Zorvans Store</h3>
-                            <p class="project-description">Modern e-commerce style storefront showcasing luxury watches and perfumes with elegant product layout.</p>
-                            <div class="project-tech">
-                                <span class="tech-tag">HTML</span>
-                                <span class="tech-tag">CSS</span>
-                                <span class="tech-tag">JavaScript</span>
-                            </div>
-                            <a href="https://zorvans-store.ct.ws/" target="_blank" rel="noopener noreferrer" class="project-link">
-                                View Live Demo <i class="fas fa-external-link-alt"></i>
-                            </a>
-                        </div>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <!-- Skills Section -->
         <section id="skills" class="section">
             <div class="container">
                 <div class="section-header">
-                    <span class="section-label">Tech Stack</span>
-                    <h2 class="section-title">Skills & Technologies</h2>
-                    <p class="section-subtitle">Tools and technologies I use to bring ideas to life</p>
+                    <span class="section-label">Skills</span>
+                    <h2 class="section-title">Technologies I Work With</h2>
                 </div>
-                <div class="skills-wrapper">
-                    <div class="skills-category">
-                        <h3 class="skills-category-title">Frontend Development</h3>
-                        <div class="skills-badges">
-                            <div class="skill-badge">
+                <div class="skills-container">
+                    <div class="skill-category">
+                        <h3 class="skill-category-title">Frontend</h3>
+                        <div class="skills-grid">
+                            <div class="skill-item">
                                 <i class="fab fa-html5"></i>
                                 <span>HTML5</span>
                             </div>
-                            <div class="skill-badge">
+                            <div class="skill-item">
                                 <i class="fab fa-css3-alt"></i>
                                 <span>CSS3</span>
                             </div>
-                            <div class="skill-badge">
-                                <i class="fab fa-js"></i>
+                            <div class="skill-item">
+                                <i class="fab fa-js-square"></i>
                                 <span>JavaScript</span>
                             </div>
-                            <div class="skill-badge">
+                            <div class="skill-item">
                                 <i class="fab fa-react"></i>
                                 <span>React</span>
                             </div>
                         </div>
                     </div>
-                    <div class="skills-category">
-                        <h3 class="skills-category-title">Backend Development</h3>
-                        <div class="skills-badges">
-                            <div class="skill-badge">
+                    <div class="skill-category">
+                        <h3 class="skill-category-title">Backend</h3>
+                        <div class="skills-grid">
+                            <div class="skill-item">
                                 <i class="fab fa-node-js"></i>
                                 <span>Node.js</span>
                             </div>
-                            <div class="skill-badge">
+                            <div class="skill-item">
                                 <i class="fab fa-python"></i>
                                 <span>Python</span>
                             </div>
                         </div>
                     </div>
-                    <div class="skills-category">
-                        <h3 class="skills-category-title">Specialties</h3>
-                        <div class="skills-badges">
-                            <div class="skill-badge">
-                                <i class="fas fa-paint-brush"></i>
-                                <span>Frontend Developer</span>
+                    <div class="skill-category">
+                        <h3 class="skill-category-title">Expertise</h3>
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <i class="fas fa-desktop"></i>
+                                <span>Frontend Development</span>
                             </div>
-                            <div class="skill-badge">
+                            <div class="skill-item">
                                 <i class="fas fa-server"></i>
-                                <span>Backend Developer</span>
+                                <span>Backend Development</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-mobile-alt"></i>
+                                <span>Responsive Design</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-rocket"></i>
+                                <span>Landing Pages</span>
                             </div>
                         </div>
                     </div>
@@ -240,105 +207,117 @@
             </div>
         </section>
 
-        <!-- CTA Section -->
-        <section class="cta-section">
+        <section id="projects" class="section section-alt">
             <div class="container">
-                <div class="cta-content">
-                    <h2 class="cta-title">Ready to Start Your Project?</h2>
-                    <p class="cta-description">Let's build something amazing together. Get your business online today.</p>
-                    <div class="cta-buttons">
-                        <a href="https://wa.me/919871244749" target="_blank" class="btn btn-primary btn-large">
-                            <i class="fab fa-whatsapp"></i>
-                            <span>Start a Conversation</span>
-                        </a>
-                        <a href="mailto:vraj01889@gmail.com" class="btn btn-white">
-                            <i class="fas fa-envelope"></i>
-                            <span>Send Email</span>
-                        </a>
-                    </div>
+                <div class="section-header">
+                    <span class="section-label">Portfolio</span>
+                    <h2 class="section-title">Featured Projects</h2>
+                    <p class="section-subtitle">A selection of my recent work</p>
+                </div>
+                <div class="projects-grid">
+                    <article class="project-card">
+                        <div class="project-image">
+                            <div class="project-overlay">
+                                <a href="https://epoxyinspiration.ct.ws/" target="_blank" rel="noopener noreferrer" class="project-btn">
+                                    <i class="fas fa-external-link-alt"></i> Live Preview
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">Epoxy Inspiration</h3>
+                            <p class="project-description">A clean and elegant product showcase website for custom handmade resin art products. Features product gallery and contact information.</p>
+                            <div class="project-tags">
+                                <span class="project-tag">HTML</span>
+                                <span class="project-tag">CSS</span>
+                                <span class="project-tag">JavaScript</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="project-card">
+                        <div class="project-image project-image-2">
+                            <div class="project-overlay">
+                                <a href="https://zorvans-store.ct.ws/" target="_blank" rel="noopener noreferrer" class="project-btn">
+                                    <i class="fas fa-external-link-alt"></i> Live Preview
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">Zorvans Store</h3>
+                            <p class="project-description">A modern storefront website showcasing luxury watches and perfumes with a clean product display layout.</p>
+                            <div class="project-tags">
+                                <span class="project-tag">HTML</span>
+                                <span class="project-tag">CSS</span>
+                                <span class="project-tag">JavaScript</span>
+                            </div>
+                        </div>
+                    </article>
                 </div>
             </div>
         </section>
 
-        <!-- Contact Section -->
         <section id="contact" class="section">
             <div class="container">
                 <div class="section-header">
-                    <span class="section-label">Get In Touch</span>
-                    <h2 class="section-title">Contact Me</h2>
-                    <p class="section-subtitle">Have a project in mind? Let's discuss it</p>
+                    <span class="section-label">Contact</span>
+                    <h2 class="section-title">Let's Work Together</h2>
+                    <p class="section-subtitle">Have a project in mind? Let's build it together</p>
                 </div>
-                <div class="contact-grid">
-                    <a href="https://wa.me/919871244749" target="_blank" class="contact-card-new">
-                        <div class="contact-card-icon">
-                            <i class="fab fa-whatsapp"></i>
-                        </div>
-                        <div class="contact-card-content">
-                            <h4>WhatsApp</h4>
-                            <p>+91 9871244749</p>
-                        </div>
-                        <i class="fas fa-chevron-right contact-card-arrow"></i>
-                    </a>
-                    <a href="mailto:vraj01889@gmail.com" class="contact-card-new">
-                        <div class="contact-card-icon">
-                            <i class="fas fa-envelope"></i>
-                        </div>
-                        <div class="contact-card-content">
-                            <h4>Email</h4>
-                            <p>vraj01889@gmail.com</p>
-                        </div>
-                        <i class="fas fa-chevron-right contact-card-arrow"></i>
-                    </a>
-                    <a href="https://github.com/RajVerma219" target="_blank" class="contact-card-new">
-                        <div class="contact-card-icon">
-                            <i class="fab fa-github"></i>
-                        </div>
-                        <div class="contact-card-content">
-                            <h4>GitHub</h4>
-                            <p>github.com/RajVerma219</p>
-                        </div>
-                        <i class="fas fa-chevron-right contact-card-arrow"></i>
-                    </a>
+                <div class="contact-content">
+                    <div class="contact-cards">
+                        <a href="https://wa.me/919871244749" target="_blank" rel="noopener noreferrer" class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fab fa-whatsapp"></i>
+                            </div>
+                            <div class="contact-info">
+                                <h4>WhatsApp</h4>
+                                <p>+91 9871244749</p>
+                            </div>
+                            <i class="fas fa-arrow-right contact-arrow"></i>
+                        </a>
+                        <a href="mailto:vraj01889@gmail.com" class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-info">
+                                <h4>Email</h4>
+                                <p>vraj01889@gmail.com</p>
+                            </div>
+                            <i class="fas fa-arrow-right contact-arrow"></i>
+                        </a>
+                        <a href="https://github.com/RajVerma219" target="_blank" rel="noopener noreferrer" class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fab fa-github"></i>
+                            </div>
+                            <div class="contact-info">
+                                <h4>GitHub</h4>
+                                <p>github.com/RajVerma219</p>
+                            </div>
+                            <i class="fas fa-arrow-right contact-arrow"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
 
-    <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <div class="footer-top">
-                <div class="footer-brand">
-                    <h3 class="footer-logo">Raj Verma</h3>
-                    <p class="footer-description">Frontend & Backend Developer building modern web solutions for businesses.</p>
-                    <div class="footer-social">
-                        <a href="https://github.com/RajVerma219" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                        <a href="https://wa.me/919871244749" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
-                        <a href="mailto:vraj01889@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
-                    </div>
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-bracket">&lt;</span>Raj Verma<span class="logo-bracket">/&gt;</span>
                 </div>
-                <div class="footer-links-group">
-                    <div class="footer-column">
-                        <h4 class="footer-heading">Quick Links</h4>
-                        <ul class="footer-links">
-                            <li><a href="#home">Home</a></li>
-                            <li><a href="#features">Services</a></li>
-                            <li><a href="#projects">Projects</a></li>
-                            <li><a href="#skills">Skills</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-column">
-                        <h4 class="footer-heading">Get In Touch</h4>
-                        <ul class="footer-links">
-                            <li><a href="https://wa.me/919871244749">WhatsApp</a></li>
-                            <li><a href="mailto:vraj01889@gmail.com">Email</a></li>
-                            <li><a href="https://github.com/RajVerma219">GitHub</a></li>
-                        </ul>
-                    </div>
+                <p class="footer-text">© 2026 Raj Verma. All rights reserved.</p>
+                <div class="footer-social">
+                    <a href="https://github.com/RajVerma219" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://wa.me/919871244749" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <a href="mailto:vraj01889@gmail.com" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
                 </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 Raj Verma. All rights reserved.</p>
             </div>
         </div>
     </footer>
